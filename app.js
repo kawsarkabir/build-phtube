@@ -68,3 +68,8 @@ const displaySingleCategory = (categoryItem) => {
 };
 handleCategories();
 singleCategoryLoad('1000');
+
+// handleBlog btn clic then redirect another page
+const handleBlog =()=>{
+    location.href = "blog.html";
+}

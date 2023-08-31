@@ -34,8 +34,17 @@ const displaySingleCategory = (categoryItem) => {
     "single-category-container"
   );
   singleCategoryContainer.textContent = "";
+
+  //   no data found
+  const notDataFound = document.getElementById("no-data-found");
+  if (categoryItem.length === 0) {
+    notDataFound.classList.remove("hidden");
+  } else {
+    notDataFound.classList.add("hidden");
+  }
+
+  //   categoryItem looping
   categoryItem.forEach((singleCategory) => {
-    console.log(singleCategory);
     const div = document.createElement("div");
     div.innerHTML = `
         <div class="card w-96">

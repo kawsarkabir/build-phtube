@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ph-Tube</title>
-    <link rel="shortcut icon" href="./assest/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assest/Logo.png" type="image/x-icon" />
     <!-- tailwind and daisy ui cdn link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="container mx-auto px-10 mt-5">
-        <div class="flex justify-between items-center flex-col gap-4 md:flex-row lg:flex-row">
-            <img src="./assest/Logo.png" alt="" class="w-36">
-            <button class="bg-gray-100 py-2 px-6 rounded-lg">Sort By View</button>
-            <button class="py-2 px-6 rounded-lg bg-red-500 text-white uppercase">Blog</button>
-        </div>
-        <p class="border-b mt-5"></p>
+      <div
+        class="flex justify-between items-center flex-col gap-4 md:flex-row lg:flex-row"
+      >
+        <img src="./assest/Logo.png" alt="" class="w-36" />
+        <button class="bg-gray-100 py-2 px-6 rounded-lg">Sort By View</button>
+        <button class="py-2 px-6 rounded-lg bg-red-500 text-white uppercase">
+          Blog
+        </button>
+      </div>
+      <p class="border-b mt-5"></p>
     </header>
     <main>
-        <!-- category section -->
-        <section class="mt-8 container mx-auto px-5">
-            <div id="categories-container" class="flex flex-col md:flex-row lg:flex-row gap-5 justify-center items-center">
-                
-            </div>
-        </section>
-        <!-- single category card container -->
-        <section class="mt-10 container mx-auto px-5">
-            <div id="single-category-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 justify-items-center">
-
-            </div>
-        </section>
-
+      <!-- category section -->
+      <section class="mt-8 container mx-auto px-5">
+        <div
+          id="categories-container"
+          class="flex flex-col md:flex-row lg:flex-row gap-5 justify-center items-center"
+        ></div>
+      </section>
+      <!-- single category card container -->
+      <section class="mt-10 container mx-auto px-5">
+        <div
+          id="single-category-container"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 justify-items-center"
+        ></div>
+      </section>
+      <!-- no data found massage section -->
+      <section>
+        <div
+          id="no-data-found"
+          class="flex flex-col gap-5 justify-center items-center hidden"
+        >
+          <img src="./assest/Icon.png" alt="" />
+          <h1 class="text-2xl font-semibold">
+            Oops!! Sorry, There is no content here
+          </h1>
+        </div>
+      </section>
     </main>
-    
-
-
 
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>

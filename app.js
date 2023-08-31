@@ -20,7 +20,6 @@ const displayCategories = (categories) => {
 };
 // single category data load
 const singleCategoryLoad = async (categoryId) => {
-  console.log(categoryId);
   const res = await fetch(
     `https://openapi.programming-hero.com/api/videos/category/${categoryId}`
   );
@@ -68,3 +67,4 @@ const displaySingleCategory = (categoryItem) => {
   });
 };
 handleCategories();
+singleCategoryLoad('1000');

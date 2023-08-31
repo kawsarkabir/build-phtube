@@ -53,7 +53,7 @@ const displaySingleCategory = (categoryItem) => {
     div.innerHTML = `
         <div class="card w-96">
         <div>
-        <figure><img src="${singleCategory.thumbnail}" alt="Shoes" class="rounded-xl w-80 h-52" />
+        <figure><img src="${singleCategory.thumbnail}" alt="Shoes" class="rounded-xl w-[330px] h-52" />
         </figure>
         <span class ="relative text-white bg-black px-3 py-1 left-44 bottom-8 rounded-md">${`${hours}hrs ${minutes}min ago`}</span>
         </div>

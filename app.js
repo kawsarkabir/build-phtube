@@ -56,7 +56,7 @@ const displaySingleCategory = (categoryItem) => {
             <h3 class ="text-xl font-semibold">${singleCategory.title}</h3>
             <div class="flex items-center gap-x-2">
                  <h4 class="text-gray-500 text-base">${singleCategory.authors[0].profile_name}</h4>
-                 <h4>${singleCategory.authors[0].verified}</h4>
+                 <h4>${singleCategory.authors[0].verified? `<i class="text-blue-500 fa-solid fa-certificate"></i>`:``}</h4>
             </div>
             <h4 class ="text-gray-400">${singleCategory.others.views} views</h4>
         </div>

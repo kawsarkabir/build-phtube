@@ -57,7 +57,7 @@ const displaySingleCategory = () => {
     notDataFound.classList.add("hidden");
   }
 
-  // sorting 
+  // sorting
   if (isSorting) {
     let sortItem = videos.sort((a, b) => {
       let first = totalViews(a.others.views);
@@ -77,8 +77,7 @@ const displaySingleCategory = () => {
     const hours = Math.floor(totalSeconds / 3600); // 3600 seconds in an hour
     const remainingSeconds = totalSeconds % 3600;
     const minutes = Math.floor(remainingSeconds / 60);
-    
-    
+
     const div = document.createElement("div");
     div.innerHTML = `
         <div class="card">
@@ -87,7 +86,9 @@ const displaySingleCategory = () => {
           singleCategory.thumbnail
         }" alt="Shoes" class="rounded-xl w-[330px] h-52" />
         </figure>
-        <span class ="relative text-white left-44 bottom-8 rounded-md bg-[#000]  ">${`${hours ? hours +'hrs' : ''} ${minutes ? minutes + 'min ago' : ''}`}</span>
+        <span class ="relative text-white left-44 bottom-8 rounded-md bg-[#000]  ">${`${
+          hours ? hours + "hrs" : ""
+        } ${minutes ? minutes + "min ago" : ""}`}</span>
         </div>
         <div class="card-body flex-row gap-x-5">
         <div>

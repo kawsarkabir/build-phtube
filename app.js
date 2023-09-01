@@ -81,7 +81,7 @@ const displaySingleCategory = () => {
     
     const div = document.createElement("div");
     div.innerHTML = `
-        <div class="card w-96">
+        <div class="card">
         <div>
         <figure><img src="${
           singleCategory.thumbnail

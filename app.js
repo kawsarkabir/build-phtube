@@ -13,7 +13,7 @@ const displayCategories = (categories) => {
   categories.forEach((singleCategories) => {
     const div = document.createElement("div");
     div.innerHTML = ` 
-        <button onclick="singleCategoryLoad('${singleCategories.category_id}')" class="py-2 px-6 bg-gray-100 rounded-lg">${singleCategories.category}</button>
+        <button onclick="singleCategoryLoad('${singleCategories.category_id}')" class="py-2 px-6 bg-gray-100 rounded-lg focus:bg-red-500 focus:text-white">${singleCategories.category}</button>
         `;
     categoriesContainer.appendChild(div);
   });
@@ -41,7 +41,6 @@ const displaySingleCategory = (categoryItem) => {
   } else {
     notDataFound.classList.add("hidden");
   }
-
   //   categoryItem looping
   categoryItem.forEach((singleCategory) => {
     // convert second to hours munite
@@ -75,6 +74,9 @@ const displaySingleCategory = (categoryItem) => {
     singleCategoryContainer.appendChild(div);
   });
 };
+// sort by card 
+
+
 handleCategories();
 singleCategoryLoad('1000');
 
